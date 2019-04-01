@@ -1,6 +1,5 @@
-# README
 
-* Enter your promo code to see if you've won a gym membership! *
+# Enter your promo code to see if you've won a gym membership!
 
 Validations:
 - Your code should contain 9 digits
@@ -9,5 +8,5 @@ Validations:
 ('123456789') is a valid code.
 
 Winner:
--If your promo code is valid you are in the game;
+- If your promo code is valid you are in the game;
 - Try entering 613884922 to see what happens.
