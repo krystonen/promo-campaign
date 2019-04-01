@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background: no-repeat  center  center fixed; 
+    background-image:  
+        linear-gradient(
+            to right bottom, 
+             rgba(7, 7, 7, 0.9),
+             rgba(255, 255, 255, 0.2)),  
+        url('https://source.unsplash.com/1600x900/?running, sport');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 2rem;
+    color:white;
+    background-color: transparent;
+    text-shadow: 0 1px 1px rgb(204, 204, 204);
+    overflow-x: hidden;
+}
+
+#root {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .main{
+    min-height: 65vh;
+    max-width: 80vw;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header{
+    transition: all .2s;
+}
+
+header:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+#jumbotron {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px grey;
+    transition: all .5s;
+    margin: auto 0;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+input {
+    text-align: center;
+    color:rgb(35, 35, 35) ;
+    display: block;
+}
+
+input:focus{
+   outline: none; 
+}
+
+ .btn, .btn:link, .btn:visited {
+    display: block; 
+    opacity: 1 !important;
+    margin-top: 2rem;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    background-color:black;
+    transition: all .2s;
+    border: none;
+    cursor: pointer;
+    border-radius: none !important;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    background-color:rgb(0, 85, 255);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 1;
+    background-color: black;
+}
+
+.btn:active, .btn:focus{
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    background-color:rgb(0, 85, 255);
+}
+
+.btn:disabled {
+    background-color: rgb(101, 101, 101);
+    opacity: 1;
+    cursor: default;
+}
+
+.btn:disabled:hover{
+    transform: none;
+    box-shadow: none;
+}
